@@ -1,0 +1,513 @@
+/* Tutorial Layout */
+.tutorial-content {
+    padding: 2rem 0;
+}
+
+.tutorial-grid {
+    display: grid;
+    grid-template-columns: 250px 1fr 300px;
+    gap: 2rem;
+}
+
+/* Sidebar */
+.sidebar {
+    position: sticky;
+    top: 80px;
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+    padding-right: 1rem;
+}
+
+.course-progress {
+    background: var(--background-color);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 1.5rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.progress-bar {
+    background: var(--border-color);
+    height: 8px;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.progress {
+    background: var(--primary-color);
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.tutorial-nav h3 {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin: 1.5rem 0 0.5rem;
+}
+
+.tutorial-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tutorial-nav li {
+    margin-bottom: 0.25rem;
+}
+
+.tutorial-nav a {
+    display: block;
+    padding: 0.5rem;
+    color: var(--light-text);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+}
+
+.tutorial-nav li.active a,
+.tutorial-nav a:hover {
+    background: var(--background-color);
+    color: var(--primary-color);
+}
+
+/* Main Tutorial Content */
+.tutorial {
+    background: var(--background-color);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.tutorial h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.tutorial-section {
+    margin-bottom: 3rem;
+}
+
+.tutorial-section h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.tutorial-section p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.tutorial-section ul {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+.tutorial-section li {
+    margin-bottom: 0.5rem;
+}
+
+/* Code Blocks */
+.code-block {
+    position: relative;
+    margin: 1.5rem 0;
+}
+
+pre {
+    background: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    overflow-x: auto;
+    margin: 0;
+}
+
+code {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+}
+
+.copy-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.8rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.code-block:hover .copy-btn {
+    opacity: 1;
+}
+
+.code-block code.language-bash {
+    color: #a9b7c6;
+}
+
+.code-block code.language-bash::before {
+    content: '$';
+    color: #6A9955;
+    margin-right: 0.5rem;
+}
+
+/* Lab Section */
+.lab-section {
+    background: var(--light-background);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    margin: 2rem 0;
+}
+
+.lab-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.code-editor {
+    background: #1a1a1a;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.editor-buttons {
+    padding: 0.75rem;
+    background: #2d2d2d;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+}
+
+.btn-sm {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.875rem;
+}
+
+/* Feature Grid */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.feature-card {
+    background: var(--light-background);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+}
+
+.feature-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+/* Tutorial Navigation */
+.tutorial-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+/* Right Sidebar */
+.right-sidebar {
+    position: relative;
+}
+
+.sticky-sidebar {
+    position: sticky;
+    top: 80px;
+}
+
+.resources-section {
+    background: var(--background-color);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    margin-top: 2rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.resources-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.resources-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resources-section li {
+    margin-bottom: 0.5rem;
+}
+
+.resources-section a {
+    color: var(--light-text);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.resources-section a:hover {
+    color: var(--primary-color);
+}
+
+/* Setup Steps */
+.setup-steps {
+    list-style: none;
+    padding: 0;
+    counter-reset: step;
+}
+
+.setup-steps li {
+    position: relative;
+    padding-left: 3rem;
+    margin-bottom: 2rem;
+    counter-increment: step;
+}
+
+.setup-steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.setup-steps h4 {
+    margin: 0 0 0.5rem 0;
+    color: var(--text-color);
+}
+
+/* IDE Options */
+.ide-options {
+    display: grid;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.ide-options .info-box {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .ide-options {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+/* Keyboard Shortcuts */
+code {
+    background: var(--light-background);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .tutorial-grid {
+        grid-template-columns: 200px 1fr;
+    }
+    
+    .right-sidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .tutorial-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .sidebar {
+        display: none;
+    }
+    
+    .tutorial {
+        padding: 1rem;
+    }
+    
+    .tutorial h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Info Boxes */
+.info-box {
+    background: var(--light-background);
+    border-left: 4px solid var(--primary-color);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+.info-box h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.info-box ul {
+    margin-bottom: 0;
+}
+
+/* Output Blocks */
+.output-block {
+    background: #1a1a1a;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    margin: 1rem 0;
+}
+
+.output-block h4 {
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.output-block pre {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.output-block code {
+    color: #ffffff;
+}
+
+/* Note Box */
+.note-box {
+    background: var(--light-background);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: var(--border-radius);
+}
+
+.note-box h4 {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.note-box code {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+/* Resource Links */
+.resource-links {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.resource-links li {
+    margin-bottom: 0.75rem;
+}
+
+.resource-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.resource-links a:hover {
+    text-decoration: underline;
+}
+
+/* Practice Exercise */
+.practice-exercise {
+    background: var(--light-background);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: var(--border-radius);
+}
+
+.practice-exercise h3 {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+/* FAQ Section */
+.faq-section {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.faq-item {
+    background: var(--background-color);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+}
+
+.faq-item h4 {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.faq-item p {
+    color: var(--light-text);
+    margin: 0;
+}
+
+/* Premium Content */
+.premium-link {
+    position: relative;
+}
+
+.premium-link::after {
+    content: '✨';
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+}
+
+/* Support Section */
+.support-section {
+    background: var(--background-color);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+}
+
+.support-section h3 {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.support-section p {
+    color: var(--light-text);
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.social-share {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}

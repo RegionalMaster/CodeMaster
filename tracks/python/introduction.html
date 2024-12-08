@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn Python programming from scratch with hands-on examples and interactive labs">
+    <meta name="keywords" content="python tutorial, python programming, learn python, python for beginners">
+    <title>Introduction to Python Programming - CodeMaster</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/tutorial.css">
+    
+    <!-- Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.google.com/pagead/js/adsbygoogle.js?client=your-client-id" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">CodeMaster</div>
+            <div class="nav-links">
+                <a href="../../index.html">Home</a>
+                <a href="../../tracks.html">Tracks</a>
+                <a href="#" class="active">Python</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="tutorial-content">
+        <div class="container">
+            <div class="tutorial-grid">
+                <!-- Sidebar Navigation -->
+                <aside class="sidebar">
+                    <div class="course-progress">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 5%"></div>
+                        </div>
+                        <span>5% Complete</span>
+                    </div>
+                    
+                    <nav class="tutorial-nav">
+                        <h3>Getting Started</h3>
+                        <ul>
+                            <li class="active"><a href="#introduction">Introduction to Python</a></li>
+                            <li><a href="setup.html">Setting Up Python</a></li>
+                            <li><a href="first-program.html">Your First Program</a></li>
+                        </ul>
+                        
+                        <h3>Python Basics</h3>
+                        <ul>
+                            <li><a href="variables.html">Variables & Data Types</a></li>
+                            <li><a href="operators.html">Operators</a></li>
+                            <li><a href="strings.html">Working with Strings</a></li>
+                            <li><a href="control-flow.html">Control Flow</a></li>
+                            <li><a href="loops.html">Loops</a></li>
+                            <li><a href="functions.html">Functions</a></li>
+                        </ul>
+
+                        <h3>Data Structures</h3>
+                        <ul>
+                            <li><a href="lists.html">Lists</a></li>
+                            <li><a href="tuples.html">Tuples</a></li>
+                            <li><a href="dictionaries.html">Dictionaries</a></li>
+                            <li><a href="sets.html">Sets</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+
+                <!-- Main Content -->
+                <article class="tutorial">
+                    <h1>Introduction to Python</h1>
+                    
+                    <div class="ad-container-horizontal">
+                        <!-- Tutorial top ad -->
+                        <div class="ad-placeholder">Advertisement</div>
+                    </div>
+
+                    <section class="tutorial-section">
+                        <h2>What is Python?</h2>
+                        <p>Python is a high-level, interpreted programming language created by Guido van Rossum and released in 1991. It emphasizes code readability with its notable use of significant whitespace.</p>
+                        
+                        <div class="info-box">
+                            <h3>Why Choose Python?</h3>
+                            <ul>
+                                <li><strong>Easy to Learn:</strong> Simple, readable syntax perfect for beginners</li>
+                                <li><strong>Versatile:</strong> Used in web development, data science, AI, automation, and more</li>
+                                <li><strong>Large Community:</strong> Extensive libraries and active community support</li>
+                                <li><strong>High Demand:</strong> One of the most sought-after programming skills</li>
+                                <li><strong>Cross-Platform:</strong> Runs on Windows, Mac, Linux, and more</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="tutorial-section">
+                        <h2>Your First Python Program</h2>
+                        <p>Let's look at the traditional "Hello, World!" program in Python:</p>
+                        
+                        <div class="code-block">
+                            <pre><code class="language-python">print("Hello, World!")</code></pre>
+                            <button class="btn btn-outline btn-sm copy-btn">Copy</button>
+                        </div>
+                        
+                        <div class="output-block">
+                            <h4>Expected Output:</h4>
+                            <pre><code>Hello, World!</code></pre>
+                        </div>
+
+                        <div class="note-box">
+                            <h4>Understanding the Code:</h4>
+                            <ul>
+                                <li><code>print()</code> is a built-in Python function that outputs text to the screen</li>
+                                <li>Text in quotes ("") is called a string</li>
+                                <li>Python executes code line by line, from top to bottom</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="tutorial-section">
+                        <h2>Try It Yourself</h2>
+                        <p>Practice these examples in your local Python environment or try them in online Python editors like:</p>
+                        <ul class="resource-links">
+                            <li><a href="https://replit.com" target="_blank">Replit</a> - Full development environment</li>
+                            <li><a href="https://pythontutor.com" target="_blank">Python Tutor</a> - Visualize code execution</li>
+                            <li><a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">Programiz</a> - Simple online compiler</li>
+                        </ul>
+
+                        <div class="practice-exercise">
+                            <h3>📝 Practice Exercise</h3>
+                            <p>Try these variations of the print statement:</p>
+                            
+                            <div class="code-block">
+                                <pre><code class="language-python"># Print your name
+print("Your Name")
+
+# Print multiple lines
+print("Line 1")
+print("Line 2")
+
+# Print with concatenation
+name = "Python"
+print("Hello, " + name + "!")
+
+# Print with formatting
+age = 30
+print("I am {} years old".format(age))</code></pre>
+                                <button class="btn btn-outline btn-sm copy-btn">Copy</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="tutorial-section">
+                        <h2>Common Beginner Questions</h2>
+                        <div class="faq-section">
+                            <div class="faq-item">
+                                <h4>Do I need to install Python?</h4>
+                                <p>Yes, to run Python locally. We'll cover installation in the next lesson. For now, you can use online editors.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4>What version of Python should I use?</h4>
+                                <p>We recommend Python 3.x (latest stable version). Python 2 is no longer supported.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4>What code editor should I use?</h4>
+                                <p>Popular choices include VS Code, PyCharm, and IDLE (comes with Python). We'll discuss editors in the setup guide.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="tutorial-navigation">
+                        <a href="../../tracks.html" class="btn btn-outline">← Back to Tracks</a>
+                        <a href="setup.html" class="btn btn-primary">Next: Setting Up Python →</a>
+                    </div>
+
+                    <!-- Bottom Advertisement -->
+                    <div class="ad-container-horizontal mt-2">
+                        <div class="ad-placeholder">Advertisement</div>
+                    </div>
+                </article>
+
+                <!-- Right Sidebar -->
+                <aside class="right-sidebar">
+                    <div class="sticky-sidebar">
+                        <div class="ad-container-vertical">
+                            <!-- Sidebar ad -->
+                            <div class="ad-placeholder">Advertisement</div>
+                        </div>
+                        
+                        <div class="resources-section">
+                            <h3>Additional Resources</h3>
+                            <ul>
+                                <li><a href="https://docs.python.org/3/" target="_blank">Official Python Documentation</a></li>
+                                <li><a href="https://www.python.org/downloads/" target="_blank">Download Python</a></li>
+                                <li><a href="#" class="premium-link">📚 Practice Problems</a></li>
+                                <li><a href="#" class="premium-link">🎥 Video Tutorials</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="support-section mt-2">
+                            <h3>Support Us</h3>
+                            <p>Help us create more free content!</p>
+                            <a href="#" class="btn btn-primary btn-sm">Become a Supporter</a>
+                            <div class="social-share mt-1">
+                                <button class="btn btn-outline btn-sm">Share</button>
+                                <button class="btn btn-outline btn-sm">Tweet</button>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>CodeMaster</h4>
+                    <p>Learn to code with hands-on practice</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="../../index.html">Home</a>
+                    <a href="../../tracks.html">Learning Tracks</a>
+                    <a href="../../about.html">About Us</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Twitter</a>
+                        <a href="#">GitHub</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CodeMaster. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
+    <script src="../../js/tutorial.js"></script>
+</body>
+</html>

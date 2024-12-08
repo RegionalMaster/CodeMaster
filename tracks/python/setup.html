@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to set up Python on your computer and get started with programming">
+    <meta name="keywords" content="python setup, install python, python IDE, python environment">
+    <title>Setting Up Python - CodeMaster</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/tutorial.css">
+    
+    <!-- Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.google.com/pagead/js/adsbygoogle.js?client=your-client-id" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">CodeMaster</div>
+            <div class="nav-links">
+                <a href="../../index.html">Home</a>
+                <a href="../../tracks.html">Tracks</a>
+                <a href="#" class="active">Python</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="tutorial-content">
+        <div class="container">
+            <div class="tutorial-grid">
+                <!-- Sidebar Navigation -->
+                <aside class="sidebar">
+                    <div class="course-progress">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 10%"></div>
+                        </div>
+                        <span>10% Complete</span>
+                    </div>
+                    
+                    <nav class="tutorial-nav">
+                        <h3>Getting Started</h3>
+                        <ul>
+                            <li><a href="introduction.html">Introduction to Python</a></li>
+                            <li class="active"><a href="#setup">Setting Up Python</a></li>
+                            <li><a href="first-program.html">Your First Program</a></li>
+                        </ul>
+                        
+                        <h3>Python Basics</h3>
+                        <ul>
+                            <li><a href="variables.html">Variables & Data Types</a></li>
+                            <li><a href="operators.html">Operators</a></li>
+                            <li><a href="strings.html">Working with Strings</a></li>
+                            <li><a href="control-flow.html">Control Flow</a></li>
+                            <li><a href="loops.html">Loops</a></li>
+                            <li><a href="functions.html">Functions</a></li>
+                        </ul>
+
+                        <h3>Data Structures</h3>
+                        <ul>
+                            <li><a href="lists.html">Lists</a></li>
+                            <li><a href="tuples.html">Tuples</a></li>
+                            <li><a href="dictionaries.html">Dictionaries</a></li>
+                            <li><a href="sets.html">Sets</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+
+                <!-- Main Content -->
+                <article class="tutorial">
+                    <h1>Setting Up Python</h1>
+                    
+                    <div class="ad-container-horizontal">
+                        <!-- Tutorial top ad -->
+                        <div class="ad-placeholder">Advertisement</div>
+                    </div>
+
+                    <section class="tutorial-section">
+                        <h2>Installing Python</h2>
+                        <p>Before you can start programming in Python, you need to install it on your computer. Follow these steps:</p>
+
+                        <div class="info-box">
+                            <h3>System Requirements</h3>
+                            <ul>
+                                <li><strong>Windows:</strong> Windows 7 or later</li>
+                                <li><strong>macOS:</strong> macOS 10.11 or later</li>
+                                <li><strong>Linux:</strong> Most modern distributions</li>
+                                <li><strong>Disk Space:</strong> At least 100MB free</li>
+                            </ul>
+                        </div>
+
+                        <h3>Step-by-Step Installation</h3>
+                        <ol class="setup-steps">
+                            <li>
+                                <h4>Download Python</h4>
+                                <p>Visit the <a href="https://www.python.org/downloads/" target="_blank">official Python website</a> and download the latest version for your operating system.</p>
+                                <div class="note-box">
+                                    <h4>Important!</h4>
+                                    <p>Make sure to check "Add Python to PATH" during installation on Windows!</p>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Run the Installer</h4>
+                                <p>Double-click the downloaded file and follow the installation wizard.</p>
+                            </li>
+                            <li>
+                                <h4>Verify Installation</h4>
+                                <p>Open a terminal or command prompt and type:</p>
+                                <div class="code-block">
+                                    <pre><code class="language-bash">python --version</code></pre>
+                                    <button class="btn btn-outline btn-sm copy-btn">Copy</button>
+                                </div>
+                                <div class="output-block">
+                                    <h4>Expected Output:</h4>
+                                    <pre><code>Python 3.12.0</code></pre>
+                                </div>
+                            </li>
+                        </ol>
+                    </section>
+
+                    <section class="tutorial-section">
+                        <h2>Choosing an IDE</h2>
+                        <p>An Integrated Development Environment (IDE) makes coding easier. Here are our recommended options:</p>
+
+                        <div class="ide-options">
+                            <div class="info-box">
+                                <h3>Visual Studio Code (Recommended)</h3>
+                                <ul>
+                                    <li><strong>Free and open-source</strong></li>
+                                    <li>Lightweight yet powerful</li>
+                                    <li>Excellent Python support with extensions</li>
+                                    <li>Great for beginners and professionals</li>
+                                    <li><a href="https://code.visualstudio.com/" target="_blank">Download VS Code</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="info-box">
+                                <h3>PyCharm</h3>
+                                <ul>
+                                    <li>Professional Python IDE</li>
+                                    <li>Community Edition is free</li>
+                                    <li>More features but steeper learning curve</li>
+                                    <li><a href="https://www.jetbrains.com/pycharm/" target="_blank">Download PyCharm</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="info-box">
+                                <h3>IDLE (Comes with Python)</h3>
+                                <ul>
+                                    <li>Simple and lightweight</li>
+                                    <li>Already installed with Python</li>
+                                    <li>Good for beginners</li>
+                                    <li>Limited features compared to VS Code/PyCharm</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="tutorial-section">
+                        <h2>Setting Up VS Code for Python</h2>
+                        <ol class="setup-steps">
+                            <li>
+                                <h4>Install VS Code Extensions</h4>
+                                <p>Open VS Code and install these essential extensions:</p>
+                                <ul>
+                                    <li>Python (by Microsoft)</li>
+                                    <li>Python Extension Pack</li>
+                                    <li>Code Runner (optional)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>Configure Python Interpreter</h4>
+                                <p>Press <code>Ctrl+Shift+P</code> (Windows/Linux) or <code>Cmd+Shift+P</code> (macOS) and type "Python: Select Interpreter"</p>
+                            </li>
+                        </ol>
+                    </section>
+
+                    <section class="tutorial-section">
+                        <h2>Common Setup Issues</h2>
+                        <div class="faq-section">
+                            <div class="faq-item">
+                                <h4>'python' is not recognized (Windows)</h4>
+                                <p>Solution: Reinstall Python and make sure to check "Add Python to PATH" during installation.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4>Multiple Python versions installed</h4>
+                                <p>Solution: Use the Python Launcher (py command) or specify the full path to the desired Python version.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4>Permission errors during installation</h4>
+                                <p>Solution: Run the installer as administrator (Windows) or use sudo (Linux/macOS).</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="tutorial-navigation">
+                        <a href="introduction.html" class="btn btn-outline">← Back to Introduction</a>
+                        <a href="first-program.html" class="btn btn-primary">Next: Your First Program →</a>
+                    </div>
+
+                    <!-- Bottom Advertisement -->
+                    <div class="ad-container-horizontal mt-2">
+                        <div class="ad-placeholder">Advertisement</div>
+                    </div>
+                </article>
+
+                <!-- Right Sidebar -->
+                <aside class="right-sidebar">
+                    <div class="sticky-sidebar">
+                        <div class="ad-container-vertical">
+                            <!-- Sidebar ad -->
+                            <div class="ad-placeholder">Advertisement</div>
+                        </div>
+                        
+                        <div class="resources-section">
+                            <h3>Additional Resources</h3>
+                            <ul>
+                                <li><a href="https://docs.python.org/3/using/index.html" target="_blank">Official Setup Guide</a></li>
+                                <li><a href="https://code.visualstudio.com/docs/python/python-tutorial" target="_blank">VS Code Python Guide</a></li>
+                                <li><a href="#" class="premium-link">📚 Setup Troubleshooting</a></li>
+                                <li><a href="#" class="premium-link">🎥 Setup Video Guide</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="support-section mt-2">
+                            <h3>Support Us</h3>
+                            <p>Help us create more free content!</p>
+                            <a href="#" class="btn btn-primary btn-sm">Become a Supporter</a>
+                            <div class="social-share mt-1">
+                                <button class="btn btn-outline btn-sm">Share</button>
+                                <button class="btn btn-outline btn-sm">Tweet</button>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>CodeMaster</h4>
+                    <p>Learn to code with hands-on practice</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="../../index.html">Home</a>
+                    <a href="../../tracks.html">Learning Tracks</a>
+                    <a href="../../about.html">About Us</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Twitter</a>
+                        <a href="#">GitHub</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CodeMaster. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
+    <script src="../../js/tutorial.js"></script>
+</body>
+</html>

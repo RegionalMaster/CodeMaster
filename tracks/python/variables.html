@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Python variables, data types, and basic operations">
+    <meta name="keywords" content="python variables, python data types, python tutorial, learn python">
+    <title>Variables & Data Types - CodeMaster</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/tutorial.css">
+    
+    <!-- Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.google.com/pagead/js/adsbygoogle.js?client=your-client-id" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">CodeMaster</div>
+            <div class="nav-links">
+                <a href="../../index.html">Home</a>
+                <a href="../../tracks.html">Tracks</a>
+                <a href="#" class="active">Python</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="tutorial-content">
+        <div class="container">
+            <div class="tutorial-grid">
+                <!-- Sidebar Navigation -->
+                <aside class="sidebar">
+                    <div class="course-progress">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 20%"></div>
+                        </div>
+                        <span>20% Complete</span>
+                    </div>
+                    
+                    <nav class="tutorial-nav">
+                        <h3>Getting Started</h3>
+                        <ul>
+                            <li><a href="introduction.html">Introduction to Python</a></li>
+                            <li><a href="setup.html">Setting Up Python</a></li>
+                            <li><a href="first-program.html">Your First Program</a></li>
+                        </ul>
+                        
+                        <h3>Python Basics</h3>
+                        <ul>
+                            <li class="active"><a href="#variables">Variables & Data Types</a></li>
+                            <li><a href="operators.html">Operators</a></li>
+                            <li><a href="strings.html">Working with Strings</a></li>
+                            <li><a href="control-flow.html">Control Flow</a></li>
+                            <li><a href="loops.html">Loops</a></li>
+                            <li><a href="functions.html">Functions</a></li>
+                        </ul>
+
+                        <h3>Data Structures</h3>
+                        <ul>
+                            <li><a href="lists.html">Lists</a></li>
+                            <li><a href="tuples.html">Tuples</a></li>
+                            <li><a href="dictionaries.html">Dictionaries</a></li>
+                            <li><a href="sets.html">Sets</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+
+                <!-- Main Content -->
+                <article class="tutorial">
+                    <h1>Variables & Data Types</h1>
+                    
+                    <div class="ad-container-horizontal">
+                        <!-- Tutorial top ad -->
+                        <div class="ad-placeholder">Advertisement</div>
+                    </div>
+
+                    <section class="tutorial-section">
+                        <h2>Understanding Variables</h2>
+                        <p>Variables are containers for storing data values. In Python, you don't need to declare a variable's type - Python does it automatically.</p>
+
+                        <div class="code-block">
+                            <pre><code class="language-python"># Creating variables
+name = "John"
+age = 25
+height = 1.75
+is_student = True</code></pre>
+                            <button class="btn btn-outline btn-sm copy-btn">Copy</button>
+                        </div>
+
+                        <div class="info-box">
+                            <h3>Variable Naming Rules</h3>
+                            <ul>
+                                <li>Must start with a letter or underscore</li>
+                                <li>Can contain letters, numbers, and underscores</li>
+                                <li>Case-sensitive (name and Name are different)</li>
+                                <li>Cannot use Python keywords (like if, for, while)</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="tutorial-section">
+                        <h2>Basic Data Types</h2>
+                        
+                        <div class="info-box">
+                            <h3>Common Data Types</h3>
+                            <ul>
+                                <li><strong>str</strong> - Text (strings)</li>
+                                <li><strong>int</strong> - Whole numbers</li>
+                                <li><strong>float</strong> - Decimal numbers</li>
+                                <li><strong>bool</strong> - True/False values</li>
+                            </ul>
+                        </div>
+
+                        <div class="code-block">
+                            <pre><code class="language-python"># Examples of different data types
+text = "Hello"           # str
+number = 42             # int
+price = 9.99           # float
+is_active = True       # bool
+
+# Check the type of a variable
+print(type(text))      # <class 'str'>
+print(type(number))    # <class 'int'>
+print(type(price))     # <class 'float'>
+print(type(is_active)) # <class 'bool'></code></pre>
+                            <button class="btn btn-outline btn-sm copy-btn">Copy</button>
+                        </div>
+                    </section>
+
+                    <section class="tutorial-section">
+                        <h2>Type Conversion</h2>
+                        <p>You can convert between different data types using Python's built-in functions:</p>
+
+                        <div class="code-block">
+                            <pre><code class="language-python"># Converting between types
+age_str = "25"
+age_num = int(age_str)    # Convert string to integer
+
+price = 9.99
+price_int = int(price)    # Convert float to integer (removes decimal)
+
+number = 42
+number_str = str(number)  # Convert number to string
+
+print(age_num + 5)        # 30
+print(price_int)         # 9
+print(number_str + "!")   # "42!"</code></pre>
+                            <button class="btn btn-outline btn-sm copy-btn">Copy</button>
+                        </div>
+
+                        <div class="note-box">
+                            <h4>Common Type Conversion Functions</h4>
+                            <ul>
+                                <li><code>str()</code> - Convert to string</li>
+                                <li><code>int()</code> - Convert to integer</li>
+                                <li><code>float()</code> - Convert to float</li>
+                                <li><code>bool()</code> - Convert to boolean</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="tutorial-section">
+                        <h2>Practice Exercises</h2>
+
+                        <div class="practice-exercise">
+                            <h3>1. Variable Creation</h3>
+                            <p>Create variables to store your personal information:</p>
+                            <div class="code-block">
+                                <pre><code class="language-python"># Store your information
+full_name = "Your Name"
+age = 25
+height = 1.75
+is_programmer = True
+
+# Print the information
+print("Name:", full_name)
+print("Age:", age)
+print("Height:", height)
+print("Is Programmer:", is_programmer)</code></pre>
+                                <button class="btn btn-outline btn-sm copy-btn">Copy</button>
+                            </div>
+                        </div>
+
+                        <div class="practice-exercise">
+                            <h3>2. Type Conversion</h3>
+                            <p>Practice converting between different data types:</p>
+                            <div class="code-block">
+                                <pre><code class="language-python"># Given values
+number_string = "100"
+decimal_number = 45.67
+whole_number = 23
+
+# Convert and print
+result1 = int(number_string) + whole_number
+result2 = str(decimal_number) + " dollars"
+result3 = float(whole_number)
+
+print(result1)  # Should print: 123
+print(result2)  # Should print: 45.67 dollars
+print(result3)  # Should print: 23.0</code></pre>
+                                <button class="btn btn-outline btn-sm copy-btn">Copy</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="tutorial-section">
+                        <h2>Common Questions</h2>
+                        <div class="faq-section">
+                            <div class="faq-item">
+                                <h4>What happens if I convert an invalid string to a number?</h4>
+                                <p>Python will raise a ValueError. For example, <code>int("hello")</code> will cause an error.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4>Can I use spaces in variable names?</h4>
+                                <p>No, use underscores instead: <code>first_name</code> instead of <code>first name</code>.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4>What's the difference between int and float?</h4>
+                                <p>int stores whole numbers (42), while float stores decimal numbers (42.0).</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="tutorial-navigation">
+                        <a href="first-program.html" class="btn btn-outline">← Back to First Program</a>
+                        <a href="operators.html" class="btn btn-primary">Next: Operators →</a>
+                    </div>
+
+                    <!-- Bottom Advertisement -->
+                    <div class="ad-container-horizontal mt-2">
+                        <div class="ad-placeholder">Advertisement</div>
+                    </div>
+                </article>
+
+                <!-- Right Sidebar -->
+                <aside class="right-sidebar">
+                    <div class="sticky-sidebar">
+                        <div class="ad-container-vertical">
+                            <!-- Sidebar ad -->
+                            <div class="ad-placeholder">Advertisement</div>
+                        </div>
+                        
+                        <div class="resources-section">
+                            <h3>Additional Resources</h3>
+                            <ul>
+                                <li><a href="https://docs.python.org/3/library/stdtypes.html" target="_blank">Python Data Types</a></li>
+                                <li><a href="https://docs.python.org/3/library/functions.html" target="_blank">Built-in Functions</a></li>
+                                <li><a href="#" class="premium-link">📚 Practice Problems</a></li>
+                                <li><a href="#" class="premium-link">🎥 Video Examples</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="support-section mt-2">
+                            <h3>Support Us</h3>
+                            <p>Help us create more free content!</p>
+                            <a href="#" class="btn btn-primary btn-sm">Become a Supporter</a>
+                            <div class="social-share mt-1">
+                                <button class="btn btn-outline btn-sm">Share</button>
+                                <button class="btn btn-outline btn-sm">Tweet</button>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>CodeMaster</h4>
+                    <p>Learn to code with hands-on practice</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="../../index.html">Home</a>
+                    <a href="../../tracks.html">Learning Tracks</a>
+                    <a href="../../about.html">About Us</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Twitter</a>
+                        <a href="#">GitHub</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CodeMaster. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
+    <script src="../../js/tutorial.js"></script>
+</body>
+</html>
