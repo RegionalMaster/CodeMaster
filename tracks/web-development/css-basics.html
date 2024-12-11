@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn CSS basics: selectors, properties, layout, and styling. Master web design with this comprehensive CSS tutorial.">
+    <meta name="keywords" content="css tutorial, css basics, web development, css selectors, css properties, web design">
+    <title>CSS Basics - CodeMaster</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/tutorial.css">
+
+    <!-- Syntax Highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet" />
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.google.com/pagead/js/adsbygoogle.js?client=your-client-id" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">CodeMaster</div>
+            <div class="nav-links">
+                <a href="../../index.html">Home</a>
+                <a href="../../index.html#tracks">Learning Tracks</a>
+                <a href="../../index.html#popular">Popular</a>
+                <a href="../../index.html#about">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="tutorial-content container">
+        <div class="tutorial-nav">
+            <a href="html-basics.html" class="nav-prev">← HTML Basics</a>
+            <a href="javascript-basics.html" class="nav-next">JavaScript Basics →</a>
+        </div>
+
+        <!-- Ad Space -->
+        <div class="ad-container-horizontal">
+            <div class="ad-placeholder">Advertisement Space</div>
+        </div>
+
+        <article>
+            <h1>CSS Basics</h1>
+            
+            <section class="introduction">
+                <p>CSS (Cascading Style Sheets) is used to style and layout web pages. It determines how HTML elements should be displayed on screen, paper, or other media.</p>
+            </section>
+
+            <section>
+                <h2>CSS Syntax</h2>
+                <p>CSS consists of selectors and declarations:</p>
+                
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>Basic CSS syntax</span>
+                        <button class="copy-btn" data-clipboard-target="#code1">Copy</button>
+                    </div>
+                    <pre><code class="language-css" id="code1">selector {
+    property: value;
+    another-property: value;
+}</code></pre>
+                </div>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>Example with multiple selectors</span>
+                        <button class="copy-btn" data-clipboard-target="#code2">Copy</button>
+                    </div>
+                    <pre><code class="language-css" id="code2">h1 {
+    color: blue;
+    font-size: 24px;
+}
+
+p {
+    color: gray;
+    line-height: 1.6;
+}</code></pre>
+                </div>
+            </section>
+
+            <section>
+                <h2>CSS Selectors</h2>
+                <p>CSS selectors define which elements to style:</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>CSS Selector Examples</span>
+                        <button class="copy-btn">Copy</button>
+                    </div>
+                    <pre><code class="language-css">/* Element selector */
+p {
+    color: blue;
+}
+
+/* Class selector */
+.highlight {
+    background-color: yellow;
+}
+
+/* ID selector */
+#header {
+    font-size: 24px;
+}
+
+/* Descendant selector */
+div p {
+    margin: 10px;
+}
+
+/* Multiple selectors */
+h1, h2, h3 {
+    font-family: Arial, sans-serif;
+}</code></pre>
+                </div>
+            </section>
+
+            <section>
+                <h2>Colors and Backgrounds</h2>
+                <p>CSS provides various ways to specify colors and backgrounds:</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>Colors and backgrounds</span>
+                        <button class="copy-btn" data-clipboard-target="#code4">Copy</button>
+                    </div>
+                    <pre><code class="language-css" id="code4">/* Color names */
+.text-red {
+    color: red;
+}
+
+/* Hex colors */
+.text-blue {
+    color: #0000FF;
+}
+
+/* RGB and RGBA */
+.text-green {
+    color: rgb(0, 255, 0);
+}
+.transparent-bg {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Backgrounds */
+.hero {
+    background-image: url('image.jpg');
+    background-size: cover;
+    background-position: center;
+}</code></pre>
+                </div>
+            </section>
+
+            <section>
+                <h2>Box Model</h2>
+                <p>The CSS box model is fundamental to layout:</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>CSS Box Model Example</span>
+                        <button class="copy-btn">Copy</button>
+                    </div>
+                    <pre><code class="language-css">.box {
+    /* Content dimensions */
+    width: 200px;
+    height: 100px;
+
+    /* Padding */
+    padding: 20px;
+    /* Or individual sides */
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+
+    /* Border */
+    border: 2px solid black;
+    border-radius: 5px;
+
+    /* Margin */
+    margin: 10px;
+    /* Or individual sides */
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}</code></pre>
+                </div>
+            </section>
+
+            <section>
+                <h2>Flexbox Layout</h2>
+                <p>Flexbox makes it easy to create flexible layouts:</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>Flexbox Example</span>
+                        <button class="copy-btn">Copy</button>
+                    </div>
+                    <pre><code class="language-css">/* Container */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Flex items */
+.flex-item {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+}
+
+/* Responsive flex items */
+@media (max-width: 768px) {
+    .flex-item {
+        flex: 100%;
+    }
+}</code></pre>
+                </div>
+            </section>
+
+            <section>
+                <h2>Responsive Design</h2>
+                <p>Make your website responsive with media queries:</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>Responsive Design Example</span>
+                        <button class="copy-btn">Copy</button>
+                    </div>
+                    <pre><code class="language-css">/* Base styles */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Tablet styles */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+    }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .hide-on-mobile {
+        display: none;
+    }
+}</code></pre>
+                </div>
+            </section>
+
+            <section>
+                <h2>Layout and Positioning</h2>
+                <p>CSS offers various ways to control element positioning:</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>Position and display</span>
+                        <button class="copy-btn" data-clipboard-target="#code6">Copy</button>
+                    </div>
+                    <pre><code class="language-css" id="code6">/* Position */
+.relative {
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Display */
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}</code></pre>
+                </div>
+            </section>
+
+            <section class="practice">
+                <h2>Practice Exercise</h2>
+                <p>Create a simple card design that includes:</p>
+                <ol>
+                    <li>A header with a background color</li>
+                    <li>An image that scales properly</li>
+                    <li>Some text content with proper spacing</li>
+                    <li>A border and rounded corners</li>
+                    <li>Hover effects for interactivity</li>
+                </ol>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>Card example</span>
+                        <button class="copy-btn" data-clipboard-target="#code7">Copy</button>
+                    </div>
+                    <pre><code class="language-css" id="code7">.card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    background-color: #f5f5f5;
+    padding: 15px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}</code></pre>
+                </div>
+            </section>
+        </article>
+
+        <!-- Bottom Ad Space -->
+        <div class="ad-container-horizontal">
+            <div class="ad-placeholder">Advertisement Space</div>
+        </div>
+
+        <div class="tutorial-nav">
+            <a href="html-basics.html" class="nav-prev">← HTML Basics</a>
+            <a href="javascript-basics.html" class="nav-next">JavaScript Basics →</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>CodeMaster</h4>
+                    <p>Learn to code with hands-on practice</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="../../index.html#tracks">Learning Tracks</a>
+                    <a href="../../index.html#popular">Popular Tutorials</a>
+                    <a href="../../index.html#about">About Us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CodeMaster. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-css.min.js"></script>
+    <script src="../../js/tutorial.js"></script>
+</body>
+</html>

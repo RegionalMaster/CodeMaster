@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn HTML basics: tags, elements, attributes, and structure. Start your web development journey with this comprehensive guide.">
+    <meta name="keywords" content="html tutorial, html basics, web development, html tags, html elements, html structure">
+    <title>HTML Basics - CodeMaster</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/tutorial.css">
+
+    <!-- Syntax Highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet" />
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.google.com/pagead/js/adsbygoogle.js?client=your-client-id" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">CodeMaster</div>
+            <div class="nav-links">
+                <a href="../../index.html">Home</a>
+                <a href="../../index.html#tracks">Learning Tracks</a>
+                <a href="../../index.html#popular">Popular</a>
+                <a href="../../index.html#about">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="tutorial-content container">
+        <div class="tutorial-nav">
+            <a href="../../index.html#tracks" class="nav-prev">← Learning Tracks</a>
+            <a href="css-basics.html" class="nav-next">CSS Basics →</a>
+        </div>
+
+        <!-- Ad Space -->
+        <div class="ad-container-horizontal">
+            <div class="ad-placeholder">Advertisement Space</div>
+        </div>
+
+        <article>
+            <h1>HTML Basics</h1>
+            
+            <section class="introduction">
+                <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages. It describes the structure of web content using a system of tags and attributes.</p>
+            </section>
+
+            <section>
+                <h2>HTML Document Structure</h2>
+                <p>Every HTML document follows this basic structure:</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>Basic HTML Structure</span>
+                        <button class="copy-btn">Copy</button>
+                    </div>
+                    <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My First HTML Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;This is my first HTML page.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                </div>
+            </section>
+
+            <!-- Middle Ad Space -->
+            <div class="ad-container-horizontal">
+                <div class="ad-placeholder">Advertisement Space</div>
+            </div>
+
+            <section>
+                <h2>Common HTML Elements</h2>
+                <p>Here are some commonly used HTML elements:</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>Common HTML Elements</span>
+                        <button class="copy-btn">Copy</button>
+                    </div>
+                    <pre><code class="language-html">&lt;!-- Headings --&gt;
+&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h2&gt;Subheading&lt;/h2&gt;
+&lt;h3&gt;Smaller heading&lt;/h3&gt;
+
+&lt;!-- Paragraphs and Text --&gt;
+&lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+&lt;p&gt;This text contains &lt;strong&gt;bold&lt;/strong&gt; and &lt;em&gt;italic&lt;/em&gt; words.&lt;/p&gt;
+
+&lt;!-- Links --&gt;
+&lt;a href="https://example.com"&gt;Click here&lt;/a&gt;
+
+&lt;!-- Images --&gt;
+&lt;img src="image.jpg" alt="Description of image"&gt;
+
+&lt;!-- Lists --&gt;
+&lt;ul&gt;
+    &lt;li&gt;Unordered list item 1&lt;/li&gt;
+    &lt;li&gt;Unordered list item 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Ordered list item 1&lt;/li&gt;
+    &lt;li&gt;Ordered list item 2&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                </div>
+            </section>
+
+            <section>
+                <h2>Forms and Input</h2>
+                <p>HTML forms are used to collect user input:</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>HTML Form Example</span>
+                        <button class="copy-btn">Copy</button>
+                    </div>
+                    <pre><code class="language-html">&lt;form action="/submit" method="POST"&gt;
+    &lt;div&gt;
+        &lt;label for="name"&gt;Name:&lt;/label&gt;
+        &lt;input type="text" id="name" name="name" required&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+        &lt;label for="email"&gt;Email:&lt;/label&gt;
+        &lt;input type="email" id="email" name="email" required&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+        &lt;label for="message"&gt;Message:&lt;/label&gt;
+        &lt;textarea id="message" name="message" rows="4"&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+
+    &lt;button type="submit"&gt;Send&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+                </div>
+            </section>
+
+            <section>
+                <h2>Tables</h2>
+                <p>HTML tables are used to display tabular data:</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>HTML Table Example</span>
+                        <button class="copy-btn">Copy</button>
+                    </div>
+                    <pre><code class="language-html">&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Header 1&lt;/th&gt;
+            &lt;th&gt;Header 2&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+            &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Row 2, Cell 1&lt;/td&gt;
+            &lt;td&gt;Row 2, Cell 2&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+                </div>
+            </section>
+
+            <section class="practice">
+                <h2>Practice Exercise</h2>
+                <p>Create a simple personal webpage that includes:</p>
+                <ol>
+                    <li>A heading with your name</li>
+                    <li>A paragraph about yourself</li>
+                    <li>An unordered list of your hobbies</li>
+                    <li>A link to your favorite website</li>
+                    <li>An image (you can use a placeholder image)</li>
+                </ol>
+            </section>
+        </article>
+
+        <!-- Bottom Ad Space -->
+        <div class="ad-container-horizontal">
+            <div class="ad-placeholder">Advertisement Space</div>
+        </div>
+
+        <div class="tutorial-nav">
+            <a href="../../index.html#tracks" class="nav-prev">← Learning Tracks</a>
+            <a href="css-basics.html" class="nav-next">CSS Basics →</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>CodeMaster</h4>
+                    <p>Learn to code with hands-on practice</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="../../index.html#tracks">Learning Tracks</a>
+                    <a href="../../index.html#popular">Popular Tutorials</a>
+                    <a href="../../index.html#about">About Us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CodeMaster. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-html.min.js"></script>
+    <script src="../../js/tutorial.js"></script>
+</body>
+</html>

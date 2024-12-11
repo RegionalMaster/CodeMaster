@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn Python control flow: if statements, loops, and conditional logic with practical examples">
+    <meta name="keywords" content="python control flow, if statements, loops, while loops, for loops, python tutorial">
+    <title>Python Control Flow - CodeMaster</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/tutorial.css">
+
+    <!-- Syntax Highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet" />
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.google.com/pagead/js/adsbygoogle.js?client=your-client-id" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">CodeMaster</div>
+            <div class="nav-links">
+                <a href="../../index.html">Home</a>
+                <a href="../../index.html#tracks">Learning Tracks</a>
+                <a href="../../index.html#popular">Popular</a>
+                <a href="../../index.html#about">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="tutorial-content container">
+        <div class="tutorial-nav">
+            <a href="variables.html" class="nav-prev">← Variables & Data Types</a>
+            <a href="functions.html" class="nav-next">Functions →</a>
+        </div>
+
+        <!-- Ad Space -->
+        <div class="ad-container-horizontal">
+            <div class="ad-placeholder">Advertisement Space</div>
+        </div>
+
+        <article>
+            <h1>Python Control Flow</h1>
+            
+            <section class="introduction">
+                <p>Control flow is the order in which individual statements, instructions, or function calls are executed in a program. In this tutorial, you'll learn how to control the flow of your Python programs using conditional statements and loops.</p>
+            </section>
+
+            <section>
+                <h2>If Statements</h2>
+                <p>Python uses if statements for conditional execution. Here's an example:</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>Basic if statement example</span>
+                        <button class="copy-btn">Copy</button>
+                    </div>
+                    <pre><code class="language-python"># Try changing the number to see different results
+number = 7
+
+if number > 10:
+    print("Number is greater than 10")
+elif number > 5:
+    print("Number is greater than 5 but less than or equal to 10")
+else:
+    print("Number is less than or equal to 5")</code></pre>
+                </div>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>Basic if statement</span>
+                        <button class="copy-btn" data-clipboard-target="#code1">Copy</button>
+                    </div>
+                    <pre><code class="language-python" id="code1">age = 18
+if age >= 18:
+    print("You are an adult")
+else:
+    print("You are a minor")</code></pre>
+                </div>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>if-elif-else chain</span>
+                        <button class="copy-btn" data-clipboard-target="#code2">Copy</button>
+                    </div>
+                    <pre><code class="language-python" id="code2">score = 85
+if score >= 90:
+    grade = "A"
+elif score >= 80:
+    grade = "B"
+elif score >= 70:
+    grade = "C"
+else:
+    grade = "F"</code></pre>
+                </div>
+            </section>
+
+            <!-- Middle Ad Space -->
+            <div class="ad-container-horizontal">
+                <div class="ad-placeholder">Advertisement Space</div>
+            </div>
+
+            <section>
+                <h2>For Loops</h2>
+                <p>For loops are used to iterate over sequences. Here's an example:</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>Basic for loop example</span>
+                        <button class="copy-btn">Copy</button>
+                    </div>
+                    <pre><code class="language-python"># A simple for loop example
+fruits = ["apple", "banana", "orange"]
+
+for fruit in fruits:
+    print(f"I like {fruit}s!")</code></pre>
+                </div>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>Basic for loop</span>
+                        <button class="copy-btn" data-clipboard-target="#code3">Copy</button>
+                    </div>
+                    <pre><code class="language-python" id="code3">fruits = ["apple", "banana", "orange"]
+for fruit in fruits:
+    print(fruit)</code></pre>
+                </div>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>range() function</span>
+                        <button class="copy-btn" data-clipboard-target="#code4">Copy</button>
+                    </div>
+                    <pre><code class="language-python" id="code4"># Print numbers 0 to 4
+for i in range(5):
+    print(i)
+
+# Print numbers 2 to 5
+for i in range(2, 6):
+    print(i)
+
+# Count by 2s
+for i in range(0, 10, 2):
+    print(i)</code></pre>
+                </div>
+            </section>
+
+            <section>
+                <h2>While Loops</h2>
+                <p>While loops repeat a block of code as long as a condition is true.</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>Basic while loop</span>
+                        <button class="copy-btn" data-clipboard-target="#code5">Copy</button>
+                    </div>
+                    <pre><code class="language-python" id="code5">count = 0
+while count < 5:
+    print(count)
+    count += 1</code></pre>
+                </div>
+
+                <div class="info-box">
+                    <h3>⚠️ Important Note</h3>
+                    <p>Be careful with while loops! Always make sure the condition will eventually become false, or you'll create an infinite loop.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Break and Continue</h2>
+                <p>Break and continue statements give you more control over your loops.</p>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>Break statement</span>
+                        <button class="copy-btn" data-clipboard-target="#code6">Copy</button>
+                    </div>
+                    <pre><code class="language-python" id="code6">for i in range(10):
+    if i == 5:
+        break  # Exit the loop
+    print(i)</code></pre>
+                </div>
+
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>Continue statement</span>
+                        <button class="copy-btn" data-clipboard-target="#code7">Copy</button>
+                    </div>
+                    <pre><code class="language-python" id="code7">for i in range(5):
+    if i == 2:
+        continue  # Skip this iteration
+    print(i)</code></pre>
+                </div>
+            </section>
+
+            <section class="practice">
+                <h2>Practice Exercises</h2>
+                <ol>
+                    <li>Write a program that prints numbers from 1 to 100. For multiples of 3, print "Fizz" instead of the number, and for multiples of 5, print "Buzz".</li>
+                    <li>Create a simple number guessing game using a while loop.</li>
+                    <li>Write a program that finds all even numbers between 1 and 50 using a for loop and continue statement.</li>
+                </ol>
+            </section>
+        </article>
+
+        <!-- Bottom Ad Space -->
+        <div class="ad-container-horizontal">
+            <div class="ad-placeholder">Advertisement Space</div>
+        </div>
+
+        <div class="tutorial-nav">
+            <a href="variables.html" class="nav-prev">← Variables & Data Types</a>
+            <a href="functions.html" class="nav-next">Functions →</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>CodeMaster</h4>
+                    <p>Learn to code with hands-on practice</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="../../index.html#tracks">Learning Tracks</a>
+                    <a href="../../index.html#popular">Popular Tutorials</a>
+                    <a href="../../index.html#about">About Us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CodeMaster. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
+    <script src="../../js/tutorial.js"></script>
+</body>
+</html>

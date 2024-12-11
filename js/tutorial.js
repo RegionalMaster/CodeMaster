@@ -153,70 +153,139 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     addShortcutsTooltip();
+
+    // Add copy functionality to code blocks
+    function initializeCodeBlocks() {
+        document.querySelectorAll('.code-block').forEach(block => {
+            const copyBtn = block.querySelector('.copy-btn');
+            const codeElement = block.querySelector('code');
+            
+            if (copyBtn && codeElement) {
+                copyBtn.addEventListener('click', () => {
+                    navigator.clipboard.writeText(codeElement.textContent)
+                        .then(() => {
+                            copyBtn.textContent = 'Copied!';
+                            setTimeout(() => {
+                                copyBtn.textContent = 'Copy';
+                            }, 2000);
+                        })
+                        .catch(err => {
+                            console.error('Failed to copy:', err);
+                        });
+                });
+            }
+        });
+    }
+
+    // Initialize features
+    initializeCodeBlocks();
+
+    // Add CSS for new features
+    const addStyles = () => {
+        const styles = document.createElement('style');
+        styles.textContent = `
+            .theme-switcher {
+                margin-left: 1rem;
+            }
+
+            .dark-theme {
+                --background-color: #1a1a1a;
+                --text-color: #ffffff;
+                --light-background: #2d2d2d;
+                --border-color: #404040;
+                --light-text: #a0a0a0;
+            }
+
+            .shortcuts-tooltip {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: var(--background-color);
+                border: 1px solid var(--border-color);
+                border-radius: var(--border-radius);
+                padding: 1rem;
+                box-shadow: var(--shadow-lg);
+                display: none;
+                z-index: 1000;
+            }
+
+            .shortcuts-tooltip.show {
+                display: block;
+            }
+
+            .shortcuts-tooltip h4 {
+                margin: 0 0 0.5rem 0;
+            }
+
+            .shortcuts-tooltip ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .shortcuts-tooltip li {
+                margin: 0.5rem 0;
+            }
+
+            kbd {
+                background: var(--light-background);
+                border: 1px solid var(--border-color);
+                border-radius: 3px;
+                padding: 0.1rem 0.4rem;
+                font-size: 0.9em;
+            }
+
+            .btn-success {
+                background: #28a745;
+                color: white;
+            }
+
+            .code-block {
+                margin: 20px 0;
+                border: 1px solid var(--border-color);
+                border-radius: var(--border-radius);
+                overflow: hidden;
+            }
+
+            .code-header {
+                padding: 8px;
+                background: var(--background-color);
+                border-bottom: 1px solid var(--border-color);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .copy-btn {
+                padding: 4px 8px;
+                background: var(--primary-color);
+                color: white;
+                border: none;
+                border-radius: var(--border-radius);
+                cursor: pointer;
+                font-size: 0.9em;
+                transition: background-color 0.3s;
+            }
+
+            .copy-btn:hover {
+                background: var(--primary-dark);
+            }
+
+            pre {
+                margin: 0;
+                padding: 15px;
+                background: var(--code-background);
+                overflow-x: auto;
+            }
+
+            code {
+                font-family: monospace;
+                line-height: 1.4;
+            }
+        `;
+        document.head.appendChild(styles);
+    };
+
+    addStyles();
 });
-
-// Add CSS for new features
-const addStyles = () => {
-    const styles = document.createElement('style');
-    styles.textContent = `
-        .theme-switcher {
-            margin-left: 1rem;
-        }
-
-        .dark-theme {
-            --background-color: #1a1a1a;
-            --text-color: #ffffff;
-            --light-background: #2d2d2d;
-            --border-color: #404040;
-            --light-text: #a0a0a0;
-        }
-
-        .shortcuts-tooltip {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: var(--background-color);
-            border: 1px solid var(--border-color);
-            border-radius: var(--border-radius);
-            padding: 1rem;
-            box-shadow: var(--shadow-lg);
-            display: none;
-            z-index: 1000;
-        }
-
-        .shortcuts-tooltip.show {
-            display: block;
-        }
-
-        .shortcuts-tooltip h4 {
-            margin: 0 0 0.5rem 0;
-        }
-
-        .shortcuts-tooltip ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .shortcuts-tooltip li {
-            margin: 0.5rem 0;
-        }
-
-        kbd {
-            background: var(--light-background);
-            border: 1px solid var(--border-color);
-            border-radius: 3px;
-            padding: 0.1rem 0.4rem;
-            font-size: 0.9em;
-        }
-
-        .btn-success {
-            background: #28a745;
-            color: white;
-        }
-    `;
-    document.head.appendChild(styles);
-};
-
-addStyles();
